@@ -72,9 +72,17 @@ public class InvertedIndex : IDisposable
         string version = doc.Get("version");
         return version == IndexVersion; // && !HasDuplicateIds(); // disabled due to perf
     }
+
+    /// <summary>
+    /// Removes given document from the index.
+    /// </summary>
+    public bool DeleteDocument(IndexDocument? document)
+    {
+        return document is not null && DeleteDocument(document.Id);
+    }
     
     /// <summary>
-    /// Removes a given document from the index.
+    /// Removes given document from the index.
     /// </summary>
     /// <param name="id">ID of the document to remove</param>
     /// <returns>Whether the removal succeeded</returns>
@@ -164,7 +172,15 @@ public class InvertedIndex : IDisposable
             }
         }
     }
-    
+
+    /// <summary>
+    /// Indexes given document. If the same document is already indexed, it is updated.
+    /// </summary>
+    public void IndexDocument(IndexDocument document)
+    {
+        IndexDocument(document.Content, document.Id);
+    }
+
     /// <summary>
     /// Indexes given document. If the same document is already indexed, it is updated.
     /// </summary>
