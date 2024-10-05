@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastDex", "FastDex\FastDex.csproj", "{C0C199BA-B76A-4CF4-AEB4-CB1B33774C8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastDex.Tests", "FastDex.Tests\FastDex.Tests.csproj", "{F122974F-09C7-4CA9-8736-CA02F32C27F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0C199BA-B76A-4CF4-AEB4-CB1B33774C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0C199BA-B76A-4CF4-AEB4-CB1B33774C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0C199BA-B76A-4CF4-AEB4-CB1B33774C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0C199BA-B76A-4CF4-AEB4-CB1B33774C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F122974F-09C7-4CA9-8736-CA02F32C27F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F122974F-09C7-4CA9-8736-CA02F32C27F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F122974F-09C7-4CA9-8736-CA02F32C27F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F122974F-09C7-4CA9-8736-CA02F32C27F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
