@@ -1,0 +1,2 @@
+# fastdex
+Fast inverted index
