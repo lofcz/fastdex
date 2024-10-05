@@ -1,3 +1,5 @@
+[![FastDex](https://badgen.net/nuget/v/FastDex?v=301)](https://www.nuget.org/packages/FastDex)
+
 # FastDex
 
 Fast inverted index powered by [Lucene.NET](https://github.com/apache/lucenenet).
@@ -7,7 +9,7 @@ Fast inverted index powered by [Lucene.NET](https://github.com/apache/lucenenet)
 Create an index, by default file storage is used:
 
 ```cs
-// creates directory "myindex" if it doesn't exist, rebuilds stale index if necessarry
+// creates directory "myindex" if it doesn't exist, rebuilds stale index if necessary
 InvertedIndex index = new InvertedIndex($"myindex");
 ```
 
@@ -44,4 +46,4 @@ List<SearchResult> results = SharedIndex.Search("x =");
 
 - `Dispose()` the index once it's no longer needed.
 - The index can be searched, from multiple threads (near realtime).
-- The index can be opened only once, use it as a static resource and dispose when closing the application, eg. `lifetime.ApplicationStopping.Register(() => { myindex.Dipose(); });` in .NET Core.
+- The index can be opened only once, use it as a static resource and dispose of it when closing the application, eg. `lifetime.ApplicationStopping.Register(() => { myindex.Dipose(); });` in .NET Core.
