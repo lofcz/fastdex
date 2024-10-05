@@ -51,5 +51,5 @@ List<SearchResult> results = index.Search("x =");
 ## Gotchas
 
 - `Dispose()` the index once it's no longer needed.
-- The index can be searched, from multiple threads (near realtime).
+- The index can be searched from multiple threads at once (near realtime).
 - The index can be opened only once, use it as a static resource and dispose of it when closing the application, eg. `lifetime.ApplicationStopping.Register(() => { myindex.Dispose(); });` in .NET Core.
