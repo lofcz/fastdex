@@ -16,7 +16,7 @@ Create an index, by default file storage is used:
 
 ```cs
 // creates directory "myindex" if it doesn't exist, rebuilds stale index if necessary
-InvertedIndex index = new InvertedIndex($"myindex");
+InvertedIndex index = new InvertedIndex("myindex");
 ```
 
 Add some documents:
@@ -45,11 +45,11 @@ Finally, search the index:
 
 ```cs
 // supported features: case (in)sensitivity, whole words search, paging
-List<SearchResult> results = SharedIndex.Search("x =");
+List<SearchResult> results = index.Search("x =");
 ```
 
 ## Gotchas
 
 - `Dispose()` the index once it's no longer needed.
 - The index can be searched, from multiple threads (near realtime).
-- The index can be opened only once, use it as a static resource and dispose of it when closing the application, eg. `lifetime.ApplicationStopping.Register(() => { myindex.Dipose(); });` in .NET Core.
+- The index can be opened only once, use it as a static resource and dispose of it when closing the application, eg. `lifetime.ApplicationStopping.Register(() => { myindex.Dispose(); });` in .NET Core.
