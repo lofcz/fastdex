@@ -1,6 +1,6 @@
 # FastDex
 
-Fast inverted index powered by [Lucene .NET](https://github.com/apache/lucenenet).
+Fast inverted index powered by [Lucene.NET](https://github.com/apache/lucenenet).
 
 ## Getting Started
 
