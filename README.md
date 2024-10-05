@@ -6,6 +6,10 @@ Fast inverted index powered by [Lucene.NET](https://github.com/apache/lucenenet)
 
 ## Getting Started
 
+```
+Install-Package FastDex
+```
+
 Create an index, by default file storage is used:
 
 ```cs
