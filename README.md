@@ -6,6 +6,8 @@ Fast inverted index powered by [Lucene.NET](https://github.com/apache/lucenenet)
 
 ## Getting Started
 
+Install the library:
+
 ```
 Install-Package FastDex
 ```
