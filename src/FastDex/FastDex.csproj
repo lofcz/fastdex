@@ -11,12 +11,14 @@
         <RepositoryUrl>https://github.com/lofcz/fastdex</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>index,inverted index,lucene,fulltext</PackageTags>
+        <Version>1.0.1</Version>
+        <PackageReleaseNotes>update LuceneNET to beta17</PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Lucene.Net" Version="4.8.0-beta00016" />
-      <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00016" />
-      <PackageReference Include="Lucene.Net.Queries" Version="4.8.0-beta00016" />
+      <PackageReference Include="Lucene.Net" Version="4.8.0-beta00017" />
+      <PackageReference Include="Lucene.Net.Analysis.Common" Version="4.8.0-beta00017" />
+      <PackageReference Include="Lucene.Net.Queries" Version="4.8.0-beta00017" />
     </ItemGroup>
 
 </Project>
